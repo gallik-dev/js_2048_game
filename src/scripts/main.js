@@ -82,6 +82,8 @@ button.addEventListener('click', () => {
 
 // додаємо можливість натискати стрілки
 document.addEventListener('keydown', (e) => {
+  e.preventDefault();
+
   if (e.key === 'ArrowRight') {
     game.moveRight();
   }
